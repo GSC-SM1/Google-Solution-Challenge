@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유행 질병 정보 및 접종 병원 찾기</title>
+    <link rel="stylesheet" href="/src/main/resources/static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <a href="./intro.html">
+                <img src="../static/images/logo.webp" >
+            </a>
+        </div>   
+    </header>
+    <div class="info">
+        <div class="inner">
+            <div class="title">로타바이러스(Rotavirus)</div>
+            <hr>
+            <section class="epidem-graph">
+                <div class="section-title">발생 추이</div>
+
+            </section>
+            <hr>
+            <section class="epidem-info">
+                <div class="section-title">감염병 정보</div>
+                <table class="tg">
+                    <thead>
+                      <tr>
+                        <th class="tg-aq9b">감염 증상</th>
+                        <td class="tg-g58j">
+                            <ul>
+                                <li>심한 설사: 물설사 또는 묽은 설사, 하루에 10번 이상 배변 가능성, 혈변 동반 가능</li>
+                                <li>구토: 1일 3회 이상 구토 가능</li>
+                                <li>발열: 38°C 이상의 고열, 3~4일 지속 가능</li>
+                                <li>복통: 심한 복통, 울음, 다리 구부리기 등의 증상 나타낼 수 있음</li>
+                                <li>탈수 증상: 입 마름, 눈물 감소, 피로, 무기력, 소변량</li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-aq9b">전염 방식</td>
+                        <td class="tg-g58j">
+                            <ul>
+                                <li>오염된 물이나 음식 섭취</li>
+                                <li>바이러스가 묻어있는 표면 접촉</li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-aq9b">치료 방법</td>
+                        <td class="tg-g58j">
+                            <ul>
+                                <li>수분 및 전해질 보충 (탈수 증상 예방 및 치료)</li>
+                                <li>증상 완화 치료 (하열제, 진통제 등)</li>
+                                <li>심각한 경우 입원 치료</li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-aq9b">예방 방법</td>
+                        <td class="tg-g58j">
+                            <ul>
+                                <li>손 씻기 (비누와 물로 자주 손을 씻는 것이 중요)</li>
+                                <li>물 끓여 마시기 (오염된 물을 섭취하지 않도록 주의)</li>
+                                <li>백신 접종 (6개월~5세 미만 영유아에게 권장)</li>
+                                <li>환경 소독 (바이러스가 묻어있는 표면을 자주 소독) </li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-aq9b">예방 접종 여부</td>
+                        <td class="tg-g58j">
+                            <ul>
+                                <li>가능 (로타바이러스 백신)</li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-aq9b">진료 과목</td>
+                        <td class="tg-g58j">
+                            <ul>
+                                <li>소아과</li>
+                            </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="tg-aq9b">추가 정보</td>
+                        <td class="tg-g58j">
+                            <ul>
+                                <li>겨울철 유행</li>
+                                <li>영유아에게 가장 흔한 바이러스성 설사 질환</li>
+                                <li>백신 접종률이 높아질수록 유행 규모 </li>
+                            </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                    </table>
+            </section>
+            <hr>
+            <section class="map">
+                <div class="section-title">주변 의병원</div>
+                <div id="map" style="width:500px;height:400px;"></div>
+                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=<%= MAP_KEY %>"></script>
+                
+            </section>
+        </div>
+    </div>
+
+    <!-- <div class="main">
+
+    </div>
+    <header>
+        <h1>유행 질병 정보 및 접종 병원 찾기</h1>
+    </header>
+
+    <div class="title-box">
+        <h2>감염병명</h2>
+    </div>
+
+    <section>
+        <div class="info">
+        <h2>감염병 발생 추이 그래프</h2>
+        </div>
+        <p>그래프 들어갈 자리</p>
+    </section>
+
+    <section>
+        <div class="info">
+        <h2>감염병 정보</h2>
+        </div>
+
+        <div class="info-content">
+            <p>내용</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="info">
+        <h2>관련 병원 위치</h2>
+        </div>
+        <p>지도 들어갈 자리</p>
+    </section> -->
+
+    <footer>
+        <p>&copy; 2024 유행 질병 정보 웹페이지</p>
+    </footer>
+
+</body>
+</html>
