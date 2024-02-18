@@ -2,9 +2,11 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>유행 질병 정보 및 접종 병원 찾기</title>
     <link rel="stylesheet" href="/src/main/resources/static/css/style.css">
+    
 </head>
 <body>
     <header>
@@ -20,7 +22,39 @@
             <hr>
             <section class="epidem-graph">
                 <div class="section-title">발생 추이</div>
-
+                <div id="main" style="width: 100%; height: 500px;"></div>
+                <script type="text/javascript">
+                    var dom = document.getElementById('main');
+                    var myChart = echarts.init(dom, null, {
+                      renderer: 'canvas',
+                      useDirtyRect: false
+                    });
+                    var app = {};
+                    
+                    var option;
+                
+                    option = {
+                  xAxis: {
+                    type: 'category',
+                    data: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월']
+                  },
+                  yAxis: {
+                    type: 'value'
+                  },
+                  series: [
+                    {
+                      data: [150, 230, 224, 218, 135, 147, 260],
+                      type: 'line'
+                    }
+                  ]
+                };
+                
+                    if (option && typeof option === 'object') {
+                      myChart.setOption(option);
+                    }
+                
+                    window.addEventListener('resize', myChart.resize);
+                  </script>
             </section>
             <hr>
             <section class="epidem-info">
