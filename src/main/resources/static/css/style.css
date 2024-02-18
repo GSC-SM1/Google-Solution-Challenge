@@ -90,6 +90,7 @@ footer {
     opacity: 0;
   }
 
+
   /* main page */
   .main {
     margin: 120px 0 80px;
@@ -154,7 +155,30 @@ footer {
 .info .title {
   font-size: 35px;
   font-weight: 700;
-  margin: 20px 0 50px;
+  margin: 20px 0 0;
+}
+.info .epidem-comment {
+  display: inline-block;
+  font-size: 15px;
+  margin: 15px 10px;
+}
+.info .tag {
+  display: inline;
+  font-size: 12px;
+  font-weight: 700;  
+  color: #fff;
+}
+.info .tag .season {
+  display: inline-block;
+  background-color: #0B5C8E;
+  padding: 5px;
+  border-radius: 8px;
+}
+.info .tag .speciality {
+  display: inline-block;
+  background-color: #18A8F1;
+  padding: 5px;
+  border-radius: 8px;
 }
 .section-title {
   font-size: 25px;
@@ -211,5 +235,9 @@ footer {
 }
 .tg li {
   padding: 3px;
+}
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
 }
 

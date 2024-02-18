@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>유행 질병 정보 및 접종 병원 찾기</title>
     <link rel="stylesheet" href="/src/main/resources/static/css/style.css">
+    <script src="../static/js/main.js" defer></script>
     
 </head>
 <body>
@@ -19,6 +21,15 @@
     <div class="info">
         <div class="inner">
             <div class="title">로타바이러스(Rotavirus)</div>
+            <div class="tag">
+              <p class="season">
+                  겨울철
+              </p>
+              <p class="speciality">소아과</p>
+          </div>
+            <div class="epidem-comment">
+              로타 바이러스에 감염되어 구토와 발열, 묽은 설사, 탈수증이 나타나는 질환
+          </div>
             <hr>
             <section class="epidem-graph">
                 <div class="section-title">발생 추이</div>
@@ -137,11 +148,11 @@
             <hr>
             <section class="map">
                 <div class="section-title">주변 의병원</div>
-                <div id="map" style="width:500px;height:400px;"></div>
-                <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=<%= MAP_KEY %>"></script>
-                
+                <div id="map" style="width:100%0px;height:400px;"></div>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh_Gx40uhksf9ocAUC8LxMxG-0mg-m5SA&callback=initMap&region=kr"></script>                
             </section>
         </div>
+        
     </div>
 
     <!-- <div class="main">
