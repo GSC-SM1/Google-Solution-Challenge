@@ -10,5 +10,5 @@ A website that provides information about infectious diseases that are prevalent
    https://echarts.apache.org/handbook/en/basics/download/#online-customization
 2. Clone the repository
    https://github.com/GSC-SM1/Google-Solution-Challenge.git
-3. run it on localhost
+3. Run it on localhost
    
