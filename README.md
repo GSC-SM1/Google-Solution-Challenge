@@ -1,4 +1,4 @@
-![Logo]((https://github.com/GSC-SM1/Google-Solution-Challenge/blob/main/src/main/resources/static/images/logo.webp)
+![Logo](https://github.com/GSC-SM1/Google-Solution-Challenge/blob/main/src/main/resources/static/images/logo.webp)
 
 #Epidemic Allimie
 ---
